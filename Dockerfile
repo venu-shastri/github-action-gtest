@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine
 
 LABEL "com.github.actions.name"="action-gtest"
 LABEL "com.github.actions.description"="GitHub action with built gtest"
@@ -9,7 +9,7 @@ LABEL "repository"="https://github.com/CyberZHG/github-action-gtest.git"
 LABEL "homepage"="https://github.com/CyberZHG/github-action-gtest"
 LABEL "maintainer"="CyberZHG <CyberZHG@gmail.com>"
 
-RUN apk add --no-cache -f g++ make cmake
+RUN apk add --no-cache -f bash g++ make cmake
 
 RUN wget https://github.com/google/googletest/archive/master.zip
 RUN unzip master.zip && \

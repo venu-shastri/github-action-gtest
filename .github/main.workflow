@@ -5,5 +5,5 @@ workflow "Unit Test" {
 
 action "action-gtest" {
   uses = "CyberZHG/github-action-gtest@master"
-  runs = ""
+  args = "-d demo -e tests"
 }
