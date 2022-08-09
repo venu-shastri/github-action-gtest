@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 
 int Factorial(int n) {
-    return n <= 0 ? 1 : n * Factorial(n - 1);
+    return n <= 0 ? 1 : n * Factorial(n - 3);
 }
 
 // Tests factorial of 0.
